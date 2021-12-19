@@ -20,11 +20,9 @@ class RicartAgrawala
         char ans;
         for(i=0;i<no_of_nodes;i++)
         {
-            // Iput should either be Y if the respective node wants to enter into critical section or N if the repective node does not want to enter into critical scetion
-            //ans='';
+            // Input should either be Y if the respective node wants to enter into critical section or N if the repective node does not want to enter into critical scetion
             System.out.print("\n Does the node "+(i+1)+" want to enter into Critical Section (Y/N) ? ");
             ans=scanner.next().charAt(0);
-            //scanner.nextLine();
             if(ans=='y' || ans=='Y')
             {
                 System.out.print("\nEnter the timestamp of the node"+(i+1)+" :");
@@ -71,6 +69,7 @@ class RicartAgrawala
             }
         }
 
+        System.out.println("The node M comes out of the Critical Section");
         i=0;
         while(i<no_of_nodes)
         {
